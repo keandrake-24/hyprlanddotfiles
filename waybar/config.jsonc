@@ -8,9 +8,11 @@
     // Choose the order of the modules
     "modules-left": [
         "hyprland/workspaces",
+         "sway/workspaces"
     ],
     "modules-center": [
-        "hyprland/window"
+        "hyprland/window",
+         "sway/window"
     ],
     "modules-right": [
        "pulseaudio",
@@ -23,6 +25,17 @@
     ],
     // Modules configuration
      "hyprland/workspaces": {
+         "disable-scroll": true,
+         "all-outputs": true,
+         "warp-on-scroll": false,
+         "format": "{name}: {icon}",
+         "format-icons": {
+             "urgent": "",
+             "focused": "",
+             "default": ""
+         }
+     },
+      "sway/workspaces": {
          "disable-scroll": true,
          "all-outputs": true,
          "warp-on-scroll": false,

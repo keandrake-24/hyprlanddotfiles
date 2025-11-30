@@ -1,0 +1,11 @@
+
+//@theme "/usr/share/rofi/themes/android_notification.rasi"
+configuration {
+    show-icons: true;
+}
+
+//@theme "/home/keandrerafael/.local/share/rofi/themes/launchpad.rasi"
+
+//@theme "/home/keandrerafael/.local/share/rofi/themes/catppuccin-default.rasi"
+//@theme "/usr/share/rofi/themes/android_notification.rasi"
+@theme "/home/keandrerafael/.local/share/rofi/themes/catppuccin.rasi"
