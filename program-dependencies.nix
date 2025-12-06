@@ -21,8 +21,13 @@
         noto-fonts-cjk
         noto-fonts-emoji
         font-awesome
+        shotman
         dunst
         auto-cpufreq
+        pipewire
+        pulsemixer
+        pactl
+        brightnessctl
     ];
     services.pipewire = {
         enable = true;
@@ -39,6 +44,5 @@
     # Enable the X server
     services.xserver.enable = true;
      
-    # Optionally enable Wayland
-    services.displayManager.ly.enable = true; # Example: GDM supports Wayland
+    services.displayManager.ly.enable = true; 
 }

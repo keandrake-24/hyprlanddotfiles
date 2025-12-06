@@ -8,11 +8,11 @@
     // Choose the order of the modules
     "modules-left": [
         "hyprland/workspaces",
-         "sway/workspaces"
-    ],
-    "modules-center": [
+         "sway/workspaces",
         "hyprland/window",
          "sway/window"
+    ],
+    "modules-center": [
     ],
     "modules-right": [
        "pulseaudio",

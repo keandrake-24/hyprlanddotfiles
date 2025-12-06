@@ -1,39 +1,47 @@
 @import "mocha.css";
 
 * {
-  font-family: SFpro;
+  font-family: "JetBrainsMono";
+  font-weight: 700;
   font-size: 16px;
   min-height: 0;
 }
 
 #waybar {
-  background: rgba(255,255,255,0);
+  background: @base;
   color: @text;
-  border-radius: 1rem;
 }
 
 
 #workspaces {
   margin: 5px;
+  margin-right: 2px;
   background-color: @surface0;
-  border-radius: 1rem;
+  border-radius: 0.2rem;
   margin-left: 1rem;
 }
 
 #workspaces button {
   color: @lavender;
   padding: 0.4rem;
-  border-radius: 1rem;
+  border-radius: 0.2rem;
+}
+
+#window {
+ border-radius: 0.2rem;
+ margin: 5px;
+ padding-left: 5px;
+ padding-right: 5px; 
 }
 
 #workspaces button.active {
   color: @sky;
-  border-radius: 1rem;
+  border-radius: 0.2rem;
 }
 
 #workspaces button:hover {
   color: @sapphire;
-  border-radius: 1rem;
+  border-radius: 0.2rem;
 }
 
 #custom-music,
@@ -47,12 +55,12 @@
   background-color: @surface0;
   padding: 0.5rem 1rem;
   margin: 5px 0;
-  border-radius: 1rem;
+  border-radius: 0.2rem;
 }
 
 #clock {
   color: @blue;
-  border-radius: 1rem;
+  border-radius: 0.2rem;
 }
 
 #battery {
@@ -72,13 +80,13 @@
 }
 
 #backlight, #battery {
-    border-radius: 1rem;
+    border-radius: 0.2rem;
 }
 
 #pulseaudio {
   color: @maroon;
   margin-left: 1rem;
-  border-radius: 1rem;
+  border-radius: 0.2rem;
 }
 
 #custom-music {
@@ -87,5 +95,5 @@
 
 
 #tray {
- border-radius: 1rem;
+ border-radius: 0.2rem;
 }
