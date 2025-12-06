@@ -9,7 +9,7 @@
         ];
     };
 
-    environment.systemPackages = [ rofi ];
+    environment.systemPackages = with pkgs; [ rofi ];
 
     # Enable xdg-desktop-portal for Wayland
     services.xdg.portal = {

@@ -3,7 +3,6 @@
 {
     imports = [
         ./swayconfiguration.nix
-        ./hyprconfiguration.nix
     ];
     # System packages
     environment.systemPackages = with pkgs; [
@@ -15,19 +14,18 @@
         fastfetch # also a must
         ranger # eh this is pretty good not necessary to have a TUI file manager
         thunar #your file manager
-        networkmanagerapplet
-        google-chrome
-        noto-fonts
+        networkmanagerapplet #the applet
+        google-chrome #your browser
+        noto-fonts #fonts
         noto-fonts-cjk
         noto-fonts-emoji
-        font-awesome
-        shotman
-        dunst
-        auto-cpufreq
-        pipewire
-        pulsemixer
-        pactl
-        brightnessctl
+        shotman #a lightweight screenshotter
+        dunst #lightweight notification daemon
+        auto-cpufreq #optimize battery to insane heights (this improved my thinkpad with horrible battery that could go from 20% to 0% under load to last around 4 hours)
+        pipewire #dont you want audio?
+        pulsemixer #dont you want to control your audio?
+        pactl #audio again
+        brightnessctl #controlling your brigtness
     ];
     services.pipewire = {
         enable = true;
@@ -37,7 +35,7 @@
     systemd.services.auto-cpufreq = {
         enable = true;
         serviceConfig = {
-            Restart = "always";
+            Res# Example: GDM supports Waylandtart = "always";
         }
     }
 
