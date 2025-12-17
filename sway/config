@@ -34,6 +34,10 @@ exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY DISPLAY SWAYSO
 exec --no-startup-id nm-applet
 exec waybar
 exec dunst
+exec swayidle -w \
+	timeout 180 'sudo brightnessctl s 0' \
+	resume 'sudo brightnessctl s 20%'
+
 
 #audio keybinds
 bindsym XF86AudioRaiseVolume exec --no-startup-id pulsemixer --change-volume +5
