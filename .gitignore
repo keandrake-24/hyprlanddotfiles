@@ -3,6 +3,8 @@
 !/alacritty/
 !/waybar/
 !/sway/
+!/sway/**
+/sway/wallpaper
 !/rofi/
 !/scripts/
 !/wallpapers/

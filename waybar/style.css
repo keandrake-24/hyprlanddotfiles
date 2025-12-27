@@ -8,7 +8,7 @@
 }
 
 #waybar {
-  background: @base;
+  background: rgba(0,0,0,0);
   color: @text;
 }
 
@@ -19,6 +19,7 @@
   background-color: @surface0;
   border-radius: 0.2rem;
   margin-left: 1rem;
+  padding: 0px 5px;
 }
 
 #workspaces button {

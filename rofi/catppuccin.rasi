@@ -34,7 +34,7 @@ element {
     cursor:  pointer;
     spacing: 5px ;
     border:  0;
-    border-radius: 15;
+    border-radius: 7;
 }
 element normal.normal {
     background-color: @normal-background;
@@ -89,9 +89,9 @@ window {
     background-color: @background;
     border-radius:           10;
     location: north;
-    anchor: north;
+    anchor:  north;
     y-offset: 50;
-    width: 900;
+    width: 700;
     border: 2;
     font: "mono 14";
    
@@ -114,8 +114,8 @@ listview {
     spacing:      2px ;
     fixed-height: 0;
     border:       2px dash 0px 0px ;
-    fixed-height: true;
-    dynamic: false;
+    fixed-height: false;
+    dynamic: true;
     lines: 10;
 }
 scrollbar {
